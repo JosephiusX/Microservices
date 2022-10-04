@@ -54,4 +54,34 @@ setting up aliases for kubernetties
 
     alias dps="docker ps"
     alias k="kubectl"
+
+delete our post.yaml file because thats not how weyre actually going to startup pods. Replace it with a post-depl.yaml (deployment).
+
+# Deployment Commands
+
+    list all the running deployments:
+        kubectl get deployments
     
+    list running pods:
+        kubectl get pods
+
+    delete pods:
+        kubectl delete pod <pod_name>
+
+as soon as we delete our pod another one starts up in its place with another id
+
+    Delete a deployment:
+        kubectl delete deployment <Depl_name>
+
+Once we delete deployment, the pods go away 
+
+we remove the version number from the post-depl.yaml now it defaults to the latest if we build the file.
+
+    rebuild the posts image in the posts directory:
+        docker build -t josephius/posts .
+
+    in the k8s dir we run the yaml file again:
+        kubectl apply -f posts.yaml
+
+    back in my posts terminal:
+        docker push josephius/posts
