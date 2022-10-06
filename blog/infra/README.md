@@ -1,61 +1,4 @@
-# 69. Creating a pod (using config file)
 
-in blog
-
-    mkdir infra
-    cd infra
-    mkdir k8s
-    cd k8s
-    touch post.yaml
-
-configure the yaml file with approipriuate indentation along with the image we want to use:
-
-    apiVersion: v1
-    kind: Pod
-    metadata:
-      name: posts
-    spec:
-    containers:
-      - name: posts
-        image: josephius/posts:0.0.1
-
-in k8s dir:
-
-creating a pod via config file:
-
-    kubectl apply -f posts.yaml
-
-to see running pods:
-
-    kubectl get pods
-
-open shell inside container inside pod:
-
-    kubectl exec -it posts sh
-        exit : to exit sh
-
-get logs out of a pod:
-    
-    kubectl logs posts
-
-print out ingormation about the pod:
-
-    kubectl logs posts
-
-delete pod manually:
-    
-    kubectl delete pod posts
-
-get information about the running pod
-
-    kubectl describe pod posts
-
-setting up aliases for kubernetties
-
-    alias dps="docker ps"
-    alias k="kubectl"
-
-delete our post.yaml file because thats not how weyre actually going to startup pods. Replace it with a post-depl.yaml (deployment).
 
 # Deployment Commands
 
@@ -75,13 +18,39 @@ as soon as we delete our pod another one starts up in its place with another id
 
 Once we delete deployment, the pods go away 
 
-we remove the version number from the post-depl.yaml now it defaults to the latest if we build the file.
 
-    rebuild the posts image in the posts directory:
-        docker build -t josephius/posts .
+# Cluster Ip
 
-    in the k8s dir we run the yaml file again:
-        kubectl apply -f posts.yaml
+build an Image for the event bus:
 
-    back in my posts terminal:
-        docker push josephius/posts
+    in event-bus dir:
+        docker build -t josephiusx/event-bus .
+
+Push the image to Docker Hub:
+
+    in event-bus:
+        docker push josephiusx/event-bus
+
+Create a deployment for Event Bus:
+
+    in infra/k8s touch:
+        event-bus-depl.yaml
+            we can copy contents from post.yaml file then replace instances of 'posts' with 'event-bus'
+
+Create a cluster IP service for event-Bus and Posts:
+
+    in k8s:
+        kubectl apply -f event-bus-depl.yaml
+
+    verify that it worked:
+        kubectl get pods
+
+
+we co-locate the config for event-bus-srv in event bus-depl.yaml 
+
+    update event-bus-depl.yaml. In k8s:
+        kubectl apply -f event-bus-depl.yaml
+
+restart deployment:
+
+    k rollout restart deployment event-bus-depl
