@@ -31,5 +31,30 @@ test our work:
     k get deployments
     k get services
 
-update route in event bus
+update route in event-bus and rebuild event-bus from the directory:
 
+    docker build -t josephiusx/event-bus . 
+
+    push:
+        docker push josephiusx/event-bus
+
+restart deployment:
+
+    k rollout restart deployment event-bus-depl
+
+check that pods are updated:
+
+    k get pods
+
+test in postman. inpute node new nodeport in the url after posts
+
+    get node port. In k8s :
+        kubectl get services
+
+check logs in event bus
+
+    get id in event-bus:
+        k get pods
+
+    kubectl logs <pod-id>
+    k logs comments-depl-55775c58c-ml25d
