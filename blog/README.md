@@ -185,3 +185,5 @@ choclaty should be already installed
 
     installation page:
         https://skaffold.dev/docs/install/
+
+# 103. Skaffold Setup
