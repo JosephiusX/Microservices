@@ -176,3 +176,12 @@ open my ect/hosts file
 # 100. Unique Route Paths
 
 # 101. Final Route Config
+
+# 102. Introducing Skaffold
+
+    https://skaffold.dev/
+
+choclaty should be already installed
+
+    installation page:
+        https://skaffold.dev/docs/install/
