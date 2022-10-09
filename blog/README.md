@@ -170,3 +170,9 @@ open my ect/hosts file
         add and associate ip and associate with posts like so:
 
             127.0.0.1 posts.com
+
+# 99. Deploying the React App
+
+# 100. Unique Route Paths
+
+# 101. Final Route Config

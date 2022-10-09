@@ -54,3 +54,4 @@ we co-locate the config for event-bus-srv in event bus-depl.yaml
 restart deployment:
 
     k rollout restart deployment event-bus-depl
+
