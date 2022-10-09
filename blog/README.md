@@ -113,3 +113,60 @@ Run the command:
     kubecti rollout restart deployment <depl_name>
 
 # 88. Adding Query, Moderation and comments
+
+# 90 Load ballancer server
+
+load Ballancer Service:
+    Gets traffic in single pod
+
+Ingress or Ingress Controller:
+    A pod with a set of routing rules to distribute traffic to other services
+
+make sure we have documentation for ingress nginx NOT nginx ingress
+
+main docs: 
+    https://kubernetes.github.io/ingress-nginx/
+
+deployment docs:
+    https://kubernetes.github.io/ingress-nginx/deploy/
+
+follow instructions based on my os
+
+# 95. writing ingress config files
+
+    in k8s touch:
+        ingress-srv.yaml
+
+        apiVersion: networking.k8s.io/v1
+
+        kind: Ingress
+        metadata:
+        name: ingress-srv
+        annotations:
+            kubernetes.io/ingress.class: nginx
+        spec:
+        rules:
+            - host: posts.com
+            http:
+                paths:
+                - path: /posts
+                    pathType: Prefix
+                    backend:
+                    service:
+                        name: posts-clusterip-srv
+                        port:
+                        number: 4000
+
+    apply changes:
+        kubectl apply apply -f ingress-srv.yaml
+
+# 97. Hosts File Tweak
+
+open my ect/hosts file
+
+    navigate to:
+        C:\Windows\System32\Drivers\etc\hosts
+
+        add and associate ip and associate with posts like so:
+
+            127.0.0.1 posts.com
