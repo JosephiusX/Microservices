@@ -120,4 +120,14 @@ There are also senarios other than express validator that require consistant inp
 
 137. Solution for Error Handling
 
+138. Building an Error Handling Middleware
 
+in src
+
+        mkdir middlewares
+        cd middlewares
+        touch error-handler.ts
+
+needed to reset skaffold before successful testing of this. 
+
+139. Communicating More Info to the Error Handler
