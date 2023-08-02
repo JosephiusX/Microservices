@@ -90,4 +90,7 @@ in auth/src/
         mkdir routes
         cd routes
         touch signin.ts signout.ts signup.ts current-user.ts
-        
+
+131. Scaffolding Routes
+
+132. Adding Validation
