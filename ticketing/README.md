@@ -38,3 +38,13 @@ in ticketing dir
 fil out the config
 
 113. Adding Skaffold
+
+In Ticketing:
+
+        touch skaffold.yaml
+fill out config 
+
+to test in ticketing dir:
+
+        skaffold dev
+now we should be able to see changes made to index.ts in the console.
