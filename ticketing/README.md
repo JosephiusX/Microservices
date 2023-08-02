@@ -55,12 +55,15 @@ Note on code reloading
 
          update auth package.json start script to:
                 ts-node-dev --poll src/index.ts
+                
+115. Ingress v1 API Required Update
 
 116. Ingress-Nginx Setup
 
 https://kubernetes.github.io/ingress-nginx/deploy/
 
         checkout the quickstart installation 
+
 
 This might be the step im missing
 
