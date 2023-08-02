@@ -94,3 +94,7 @@ in auth/src/
 131. Scaffolding Routes
 
 132. Adding Validation
+
+133. Handling Validation Errors
+
+this is a good lesson to see how validation process is working before we refactor. 
