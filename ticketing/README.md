@@ -58,6 +58,10 @@ Note on code reloading
 
 116. Ingress-Nginx Setup
 
+https://kubernetes.github.io/ingress-nginx/deploy/
+
+        checkout the quickstart installation 
+
 This might be the step im missing
 
 117. Hosts File and Security Warning
