@@ -59,3 +59,12 @@ Note on code reloading
 116. Ingress-Nginx Setup
 
 This might be the step im missing
+
+117. Hosts File and Security Warning
+
+In an admin terminal 
+
+        /c/WINDOWS/System32/Drivers/etc code hosts
+fill out info. 
+
+issues with this lesson also clue me that Ingress-Nginx Setup may be required. 
