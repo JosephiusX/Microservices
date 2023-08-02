@@ -131,3 +131,17 @@ in src
 needed to reset skaffold before successful testing of this. 
 
 139. Communicating More Info to the Error Handler
+
+140. Encoding More Information In an Error
+
+Sign we need a subclass
+
+        Any time we want something like x but want to add in special properties 
+
+141. Subclassing for Custom Errors
+
+in src
+
+        mkdir errors
+        cd errors
+        touch request-validation-error.ts
