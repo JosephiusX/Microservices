@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: posts-srv
 spec:
-  type: NodePort # randomly assigned port that we use to get access to service from outside our cluster
+  type: NodePort
   selector:
-   app: posts
+    app: posts
   ports:
     - name: posts
       protocol: TCP
-      port: 4000 # port assigned to the node port service its self
-      targetPort: 4000 # used to access container running inside the pod
+      port: 4000
+      targetPort: 4000

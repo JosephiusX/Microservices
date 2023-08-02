@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
         - name: posts
-          image: josephiusx/posts
-          imagePullPolicy: Never
+          image: rallycoding/posts-100
 ---
 apiVersion: v1
 kind: Service

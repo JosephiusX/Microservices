@@ -14,9 +14,8 @@ spec:
     spec:
       containers:
         - name: client
-          image: josephiusx/client
-          imagePullPolicy: Never
---- # co-locating config for client-srv
+          image: rallycoding/client-99
+---
 apiVersion: v1
 kind: Service
 metadata:
