@@ -115,4 +115,9 @@ this is a good lesson to see how validation process is working before we refacto
 
 We need our data structures for handleing errors to have the same structures.
 
+136. Other Sources of Errors
+There are also senarios other than express validator that require consistant inputs in this way.
+
+137. Solution for Error Handling
+
 
