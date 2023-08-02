@@ -55,7 +55,7 @@ Note on code reloading
 
          update auth package.json start script to:
                 ts-node-dev --poll src/index.ts
-                
+
 115. Ingress v1 API Required Update
 
 116. Ingress-Nginx Setup
@@ -75,3 +75,19 @@ In an admin terminal
 fill out info. 
 
 issues with this lesson also clue me that Ingress-Nginx Setup may be required. 
+
+# sec6 Leveraging a cloud environment for development
+
+118. Note on Remote Development
+
+The optional nature of dev environment via cloud is explained as nessessary likely for older versions of windows that might crash later on in the development proccess. According to this I should be able to skip this section for now. 
+
+# sec7 Response Normalization Strategies
+130. Creating Route Handlers
+
+in auth/src/
+
+        mkdir routes
+        cd routes
+        touch signin.ts signout.ts signup.ts current-user.ts
+        
