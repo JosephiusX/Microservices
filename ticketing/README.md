@@ -48,3 +48,14 @@ to test in ticketing dir:
 
         skaffold dev
 now we should be able to see changes made to index.ts in the console.
+
+Note on code reloading
+
+        if I did not see my server restart after changing the file do the following:
+
+         update auth package.json start script to:
+                ts-node-dev --poll src/index.ts
+
+116. Ingress-Nginx Setup
+
+This might be the step im missing
