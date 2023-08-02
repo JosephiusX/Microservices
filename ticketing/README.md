@@ -98,3 +98,21 @@ in auth/src/
 133. Handling Validation Errors
 
 this is a good lesson to see how validation process is working before we refactor. 
+
+134. Postman HTTPS Issues
+
+                        Hi!
+
+        Got an error when testing the route handler in the last video? If so, do the following:
+
+        Open the Postman preferences. On MacOS, the hot key for this is CMD + ,
+
+        Find the setting called ‘SSL certificate verification’
+
+        Change this setting to ‘off’, as shown in the screenshot below
+
+135. Surprising Complexity Around Errors
+
+We need our data structures for handleing errors to have the same structures.
+
+
