@@ -176,3 +176,9 @@ getting error refered to in 143.
 in errors dir
 
         touch custom-error.ts
+
+149. How to Define New Custom Errors
+
+in errors dir
+
+        touch not-found.ts
