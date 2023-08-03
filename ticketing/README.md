@@ -182,3 +182,11 @@ in errors dir
 in errors dir
 
         touch not-found.ts
+
+150. Uh Oh... Async Error Handling
+
+To make sure we listen whenever express throws an async error:
+
+        within auth
+                npm install express-async-errors --save
+
