@@ -190,3 +190,15 @@ To make sure we listen whenever express throws an async error:
         within auth
                 npm install express-async-errors --save
 
+Database Management and Modeling
+
+151. Creating Databases in Kubernetes
+
+in auth
+
+        npm i mongoose
+
+in k8s
+
+        touch auth-mongo-depl.yaml
+        
