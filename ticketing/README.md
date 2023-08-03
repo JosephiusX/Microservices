@@ -148,3 +148,6 @@ in src
 
 142. Determining Error Type
   
+143. Property 'param' does not exist on type 'AlternativeValidationError'
+
+        havent got this yet
