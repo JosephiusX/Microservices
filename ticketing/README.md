@@ -151,3 +151,15 @@ in src
 143. Property 'param' does not exist on type 'AlternativeValidationError'
 
         havent got this yet
+
+144. Converting Errors to Responses
+
+Common response structure:
+
+        {
+                errors: {
+                        message: string, field?: string
+                }[]
+        }
+
+getting error refered to in 143.
