@@ -164,3 +164,5 @@ Common response structure:
         }
 
 getting error refered to in 143.
+
+145. Moving Logic Into Errors
