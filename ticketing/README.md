@@ -201,4 +201,11 @@ in auth
 in k8s
 
         touch auth-mongo-depl.yaml
-        
+                fill out
+
+may have to reset skaffold
+
+to test in auth
+
+        kubectl get pods
+                we should see 2 pods: auth-depl-.., and auth-mongo-depl-...
