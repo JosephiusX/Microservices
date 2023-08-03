@@ -8,5 +8,3 @@ export class RequestValidationError extends Error {
     Object.setPrototypeOf(this, RequestValidationError.prototype);
   }
 }
-
-throw new RequestValidationError(errors);
