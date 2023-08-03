@@ -166,3 +166,13 @@ Common response structure:
 getting error refered to in 143.
 
 145. Moving Logic Into Errors
+
+146.  serializeErrors' not assignable to the same property in base type 'CustomError'
+
+147. Verifying Our Custom Errors
+
+148. Final Error Related Code
+
+in errors dir
+
+        touch custom-error.ts
