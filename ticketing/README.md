@@ -219,3 +219,18 @@ to test in auth
 in auth 
 
         npm i @types/mongoose
+
+153. Understanding the Signup Flow
+
+154. Getting TypeScript and Mongoose to Cooperate
+
+155. Creating the User Model
+
+in auth/src
+
+        mkdir models
+        cd models
+        touch user.ts
+                input mongo logic
+
+right now ts and mongodb aren't working together. any data or type can be input without being registered via ts
