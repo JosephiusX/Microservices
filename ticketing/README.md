@@ -361,3 +361,5 @@ https://www.base64decode.org/
 https://jwt.io/
 
         we can us this to extract the information from the jwt 
+
+178. Securely Storing Secrets with Kubernetes
