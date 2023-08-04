@@ -351,3 +351,13 @@ in auth
 in auth
 
         npm install jsonwebtoken @types/jsonwebtoken
+
+177. JWT Signing Keys
+
+https://www.base64decode.org/
+
+        a tool to decode our cookie into the object containing our jwt
+
+https://jwt.io/
+
+        we can us this to extract the information from the jwt 
