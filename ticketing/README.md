@@ -274,4 +274,68 @@ static methods can be used outside a class or class instance
 
 166. Mongoose Pre-Save Hooks
 
+when I signup a new user in postman i get the hashed password as expected.
 
+# sec9 Authentication Strategies and Options
+
+167. Fundamental Authentication Strategies
+
+Authentication with microservices is a challange. Because theres no one easy way we are going to explore some of the different solutions for this.
+
+Option 1:
+
+        allow individual services to relie on a central authentication service
+                * nore convient to build but if that auth service that everything else depends on goes down it's a bad day. 
+
+Option 2:  
+
+        each individual service decides weather the user is authenticated
+                * no outside dependancy but, a lot of reusing of logic(we overcome this). 
+These are fundimental options with variations of each.
+
+168. Huge Issues with Authentication Strategies
+
+Option 2s main pitfall is that it requires web tokens which aren't as secure
+
+169. So Which Option?
+
+We are going with option #2 to emphasize the idea of independent services
+
+170. Solving Issues with Option #2 (optional)
+
+we could solve the issue with tokens partially with expiration time spans
+We can plug the rest of the hole by having all the services communicated to by an event buss connecting them to a central auth service. This way the auth service can have a temporary list that overrides the tokens for their duration. 
+
+171. Reminder on Cookies vs JWT's
+
+Cookies: Transport mechanism, Moves any kind of data between browser and server, Automatically managed by the browser.
+
+        arbitrary information stored in the browser from a server response. (Response Headers Set-Cookie)
+
+        every request the server makes to that browser subsiquently can see that cookie. (Request, Headers, Cookie)
+
+JWT's: Authentication/Authorization mechanism, Stores any data, managed manually.
+
+        the payload(arbitrary information) is then Tokenized into a representation of the infomation. The JWT can be decoded back into the original object. 
+
+        there are a few ways the information gets used:
+
+                Request
+                        Headers
+                Authorization: MY JWT
+
+                Request
+                        Body
+                token: MY JWT
+
+                Request
+                        Headers
+                Cookie: MY JWT
+
+172. Microservices Auth Requirements
+
+173. Issues with JWT's and Server Side Rendering
+
+Giant Issue! The first request cannot be customized in any way. Has something to do with why we are using a JWT stored inside a cookie.
+
+174. Cookies and Encryption
