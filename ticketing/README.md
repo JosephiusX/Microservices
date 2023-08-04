@@ -272,4 +272,6 @@ static methods can be used outside a class or class instance
 
 165. Comparing Hashed Password
 
+166. Mongoose Pre-Save Hooks
+
 
