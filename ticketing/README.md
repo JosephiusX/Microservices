@@ -234,3 +234,5 @@ in auth/src
                 input mongo logic
 
 right now ts and mongodb aren't working together. any data or type can be input without being registered via ts
+
+156. Type Checking User Properties
