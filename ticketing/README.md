@@ -363,3 +363,32 @@ https://jwt.io/
         we can us this to extract the information from the jwt 
 
 178. Securely Storing Secrets with Kubernetes
+
+179. Creating and Accessing Secrets
+
+
+        kubectl create secret generic jwt-secret --from-literal=jwt=asdf
+
+                this is an example of a imparative approach as opposed to using configuration files. We don't want any information stored with this security related info
+
+Command we are using for now in ticketing:
+
+        kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+
+see list of secrets
+
+        kubectl get secrets
+
+TEST: 
+
+        in my auth dpl change the jwt seceret ref name to something random instead of what we previously set. 
+
+        skaffold returns an error about a not found string
+
+in ticketing 
+
+        kubectl get pods
+
+Next I can get more info about a pod in question
+
+        kubectl describe pod <pod-id>
