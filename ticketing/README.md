@@ -238,3 +238,11 @@ right now ts and mongodb aren't working together. any data or type can be input 
 156. Type Checking User Properties
 
 158. Defining Extra Document Properties
+
+159. Whats That Angle Bracket For?
+
+they provide types to functions as arguments. they allow us to customize the types in classes and objects as well. 
+
+160. User Creation
+
+We now have a fully functioning user model. Now we want to get started with our signup process. 
