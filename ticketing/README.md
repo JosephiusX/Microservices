@@ -259,3 +259,14 @@ Recomends skipping next 4 lessons to save time if im familiar with hashing.
 163. Reminder on Password Hashing
 
 when the user creates a password it is converted into a token unique to the password but can only be decoded back to the password with the proper key. This way , on the we only have access to the hash representation keeping actual passwords safe in case of a db breach.
+
+164. Adding Password Hashing
+
+in auth/src
+
+        mkdir services
+        cd services
+        touch password.ts
+
+static methods can be used outside a class or class instance
+
