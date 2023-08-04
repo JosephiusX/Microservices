@@ -346,3 +346,8 @@ in auth
 
         import into index.ts
 
+176. Generating a JWT
+
+in auth
+
+        npm install jsonwebtoken @types/jsonwebtoken
