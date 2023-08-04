@@ -392,3 +392,7 @@ in ticketing
 Next I can get more info about a pod in question
 
         kubectl describe pod <pod-id>
+
+180. Accessing Env Variables in a Pod
+
+181. Common Response Properties
