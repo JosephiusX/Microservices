@@ -339,3 +339,10 @@ JWT's: Authentication/Authorization mechanism, Stores any data, managed manually
 Giant Issue! The first request cannot be customized in any way. Has something to do with why we are using a JWT stored inside a cookie.
 
 174. Cookies and Encryption
+
+in auth
+
+        npm install cookie-session @types/cookie-session
+
+        import into index.ts
+
