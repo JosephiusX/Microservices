@@ -252,3 +252,10 @@ We now have a fully functioning user model. Now we want to get started with our 
 in errors dir
 
         touch bad-request-error.ts
+
+162. Note on Password Hashing
+Recomends skipping next 4 lessons to save time if im familiar with hashing. 
+
+163. Reminder on Password Hashing
+
+when the user creates a password it is converted into a token unique to the password but can only be decoded back to the password with the proper key. This way , on the we only have access to the hash representation keeping actual passwords safe in case of a db breach.
