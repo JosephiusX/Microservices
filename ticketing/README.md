@@ -246,3 +246,9 @@ they provide types to functions as arguments. they allow us to customize the typ
 160. User Creation
 
 We now have a fully functioning user model. Now we want to get started with our signup process. 
+
+161. Proper Error Handling
+
+in errors dir
+
+        touch bad-request-error.ts
