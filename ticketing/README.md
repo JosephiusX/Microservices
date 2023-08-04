@@ -236,3 +236,5 @@ in auth/src
 right now ts and mongodb aren't working together. any data or type can be input without being registered via ts
 
 156. Type Checking User Properties
+
+158. Defining Extra Document Properties
