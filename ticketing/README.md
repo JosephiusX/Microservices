@@ -209,3 +209,13 @@ to test in auth
 
         kubectl get pods
                 we should see 2 pods: auth-depl-.., and auth-mongo-depl-...
+
+152. Connecting to MongoDB
+
+        if we delete or restart the pod running MongoDB, we will lose all of the data in it
+
+        we will talk about that more later and will introduce a fix.
+
+in auth 
+
+        npm i @types/mongoose
