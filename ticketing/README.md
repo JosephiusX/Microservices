@@ -468,3 +468,13 @@ in middlewares
         touch current-user.ts
 
 191. Augmenting Type Definitions
+
+192. Requiring Auth for Route Access
+
+In middlewares
+
+        touch require-auth.ts
+
+in errors
+
+        touch not-authorized-error.ts
