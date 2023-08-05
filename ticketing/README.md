@@ -456,3 +456,7 @@ we can also test:
 current-user.ts
 
 Testing went swell!
+
+189. Signing Out
+
+Signout test passed
