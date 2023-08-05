@@ -446,8 +446,13 @@ we can also test:
 
 187. Current User Handler
 
-current-user.ts
 
         does user have a req.session.jwt set ?
         If it is not set, or if the JWT is invalid, return early
         If yes, and JWT is valid, send back the info stored inside the JWT (the payload)
+
+188. Returning the Current User
+
+current-user.ts
+
+Testing went swell!
