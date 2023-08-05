@@ -420,4 +420,26 @@ we are going to be using this middleware in many places in the future.
 
 185. Sign In Logic
 
+186. Quick Sign In Test
 
+        POST https://ticketing.dev/api/users/signup
+        body:
+        {
+                "email": "test@test.com",
+                "password": "password"
+        }
+
+        Response:
+                {
+                "email": "test@test.com",
+                "id": "64ce2b15871042a34b64d3e2"
+                }
+
+next try to signin with the same creds. It should show me the same email and id as generated in sign up
+
+we can also test:
+
+        empty password
+        valid incorrect password
+        email that hasn't been signed up.
+                all return "Invalid credentials"
