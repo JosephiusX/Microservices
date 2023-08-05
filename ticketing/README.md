@@ -460,3 +460,11 @@ Testing went swell!
 189. Signing Out
 
 Signout test passed
+
+190. Creating a Current User Middleware
+
+in middlewares
+
+        touch current-user.ts
+
+191. Augmenting Type Definitions
