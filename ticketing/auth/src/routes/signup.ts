@@ -42,7 +42,7 @@ router.post(
         id: user.id,
         email: user.email
       },
-      process.env.JWT_KEY!
+      process.env.JWT_KEY! // ! is overriding typescript in this case.
     );
 
     // Store it on session objet

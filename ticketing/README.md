@@ -1,3 +1,4 @@
+
 111. Auth Service Setup
 
         mkdir ticketing
@@ -396,3 +397,14 @@ Next I can get more info about a pod in question
 180. Accessing Env Variables in a Pod
 
 181. Common Response Properties
+
+Auth is setup in a way where the informatin is included in the response that is good for development feedback but bad for production.
+
+Moving forward we also want to do some formatting of mongo db response conventions as we may want to use other databases.
+
+182. Formatting JSON Properties
+
+We can override how javascript turns json into a ovject
+
+
+
