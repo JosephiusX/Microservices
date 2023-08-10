@@ -58,7 +58,6 @@ Note on code reloading
                 ts-node-dev --poll src/index.ts
 
 115. Ingress v1 API Required Update
-
 116. Ingress-Nginx Setup
 
 https://kubernetes.github.io/ingress-nginx/deploy/
@@ -93,7 +92,6 @@ in auth/src/
         touch signin.ts signout.ts signup.ts current-user.ts
 
 131. Scaffolding Routes
-
 132. Adding Validation
 
 133. Handling Validation Errors
@@ -120,7 +118,6 @@ We need our data structures for handleing errors to have the same structures.
 There are also senarios other than express validator that require consistant inputs in this way.
 
 137. Solution for Error Handling
-
 138. Building an Error Handling Middleware
 
 in src
@@ -132,7 +129,6 @@ in src
 needed to reset skaffold before successful testing of this. 
 
 139. Communicating More Info to the Error Handler
-
 140. Encoding More Information In an Error
 
 Sign we need a subclass
@@ -149,7 +145,6 @@ in src
         touch request-validation-error.ts
 
 142. Determining Error Type
-  
 143. Property 'param' does not exist on type 'AlternativeValidationError'
 
         havent got this yet
@@ -167,11 +162,9 @@ Common response structure:
 getting error refered to in 143.
 
 145. Moving Logic Into Errors
-
 146.  serializeErrors' not assignable to the same property in base type 'CustomError'
 
 147. Verifying Our Custom Errors
-
 148. Final Error Related Code
 
 in errors dir
@@ -222,9 +215,7 @@ in auth
         npm i @types/mongoose
 
 153. Understanding the Signup Flow
-
 154. Getting TypeScript and Mongoose to Cooperate
-
 155. Creating the User Model
 
 in auth/src
@@ -237,9 +228,7 @@ in auth/src
 right now ts and mongodb aren't working together. any data or type can be input without being registered via ts
 
 156. Type Checking User Properties
-
 158. Defining Extra Document Properties
-
 159. Whats That Angle Bracket For?
 
 they provide types to functions as arguments. they allow us to customize the types in classes and objects as well. 
@@ -272,7 +261,6 @@ in auth/src
 static methods can be used outside a class or class instance
 
 165. Comparing Hashed Password
-
 166. Mongoose Pre-Save Hooks
 
 when I signup a new user in postman i get the hashed password as expected.
@@ -334,7 +322,6 @@ JWT's: Authentication/Authorization mechanism, Stores any data, managed manually
                 Cookie: MY JWT
 
 172. Microservices Auth Requirements
-
 173. Issues with JWT's and Server Side Rendering
 
 Giant Issue! The first request cannot be customized in any way. Has something to do with why we are using a JWT stored inside a cookie.
@@ -364,7 +351,6 @@ https://jwt.io/
         we can us this to extract the information from the jwt 
 
 178. Securely Storing Secrets with Kubernetes
-
 179. Creating and Accessing Secrets
 
 
@@ -395,7 +381,6 @@ Next I can get more info about a pod in question
         kubectl describe pod <pod-id>
 
 180. Accessing Env Variables in a Pod
-
 181. Common Response Properties
 
 Auth is setup in a way where the informatin is included in the response that is good for development feedback but bad for production.
@@ -407,7 +392,6 @@ Moving forward we also want to do some formatting of mongo db response conventio
 We can override how javascript turns json into a ovject
 
 183. The Signin Flow
-
 183. The Signin Flow
 
 in middlewares
@@ -419,7 +403,6 @@ in middlewares
 we are going to be using this middleware in many places in the future.
 
 185. Sign In Logic
-
 186. Quick Sign In Test
 
         POST https://ticketing.dev/api/users/signup
@@ -468,7 +451,6 @@ in middlewares
         touch current-user.ts
 
 191. Augmenting Type Definitions
-
 192. Requiring Auth for Route Access
 
 In middlewares
@@ -478,3 +460,17 @@ In middlewares
 in errors
 
         touch not-authorized-error.ts
+
+# SEC 10
+
+193. Scope of Testing
+194. Testing Goals
+195. Testing Architecture
+196. Index to App Refactor
+
+in ticketing src directory
+
+        touch app.ts
+
+
+
