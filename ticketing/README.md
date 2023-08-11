@@ -472,5 +472,11 @@ in ticketing src directory
 
         touch app.ts
 
+197. Replacing --only=prod Install Flag
+
+198. A Few Dependencies
+
+        npm install --save-dev @types/jest @types/supertest jest ts-jest supertest mongodb-memory-server
+
 
 
