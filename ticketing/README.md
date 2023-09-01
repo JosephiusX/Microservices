@@ -517,3 +517,25 @@ In the past I have used react router to define the routes of my page. wit next.j
 
         cd pages
         touch index.js
+
+217. Building a Next Image
+
+in client 
+
+        touch Dockerfile .dockerignore
+
+to test build, in client directory
+
+        docker build -t josephiusx/client .
+
+218. Running Next in Kubernetes
+
+        docker push josephiusx/client
+
+in k8s dir
+
+        touch client-depl.yaml
+
+dont forget to bypass chrome error if encountered:
+
+        thisisunsafe
