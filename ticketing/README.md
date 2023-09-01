@@ -549,3 +549,7 @@ in client
         touch next.config.js
 
 220. Note on File Change Detection
+
+222. Adding a Sign Up Form
+
+By defining an auth folder with a signup.js file in side of it in the context of next.js that creates an auth/signup route.
