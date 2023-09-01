@@ -486,7 +486,14 @@ in ticketing src directory
 
 201. Our First Test
 
-202. An Important Note
+to run the test we created, in auth:
 
+        npm run test
+202. An Important Note
 207. Testing Sign Out
- 
+208. Issues with Cookies During Testing
+
+        understanding the issue testing current user is usefull for problems we are likely to encounter.
+
+209. Easy Auth Solution
+
