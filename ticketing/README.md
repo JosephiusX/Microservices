@@ -539,3 +539,13 @@ in k8s dir
 dont forget to bypass chrome error if encountered:
 
         thisisunsafe
+
+219. Small Update for Custom Webpack Config
+
+218. Running Next in Kubernetes
+
+in client
+
+        touch next.config.js
+
+220. Note on File Change Detection
