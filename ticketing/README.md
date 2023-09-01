@@ -497,3 +497,23 @@ to run the test we created, in auth:
 
 209. Easy Auth Solution
 
+213. Starting the React App
+214. Reminder on Server Side Rendering
+
+explains why we are using server side rendering
+
+215. Suggestion Regarding a Default Export Warning
+
+216. Basics of Next JS
+
+in ticketing dir
+
+        mkdir client
+        cd client
+        npm init -y
+        npm i react react-dom next
+        mkdir pages
+In the past I have used react router to define the routes of my page. wit next.js however the routes will be defined by the file structure we create. 
+
+        cd pages
+        touch index.js
