@@ -4,26 +4,23 @@ import request from 'supertest';
 import { app } from '../app';
 
 declare global {
-  declare namespace NodeJS {
-    interface Global {
-      signin: any; // Replace 'any' with the actual function type
-    }
-  }
+  var signin: () => Promise<string[]>;
+}
 
 let mongo: any;
 beforeAll(async () => {
-  try {
-    process.env.JWT_KEY = 'asdfasdf';
-    mongo = await MongoMemoryServer.create();
-    const mongoUri = mongo.getUri();
-    await mongoose.connect(mongoUri, {});
-  } catch (error) {
-    console.error('Failed to connect to MongoDB:', error);
-  }
-},10000);
+  process.env.JWT_KEY = 'asdfasdf';
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
+  const mongo = await MongoMemoryServer.create();
+  const mongoUri = mongo.getUri();
+
+  await mongoose.connect(mongoUri, {});
+});
 
 beforeEach(async () => {
   const collections = await mongoose.connection.db.collections();
+
   for (let collection of collections) {
     await collection.deleteMany({});
   }
@@ -40,12 +37,15 @@ global.signin = async () => {
   const email = 'test@test.com';
   const password = 'password';
 
-  const response = await app
+  const response = await request(app)
     .post('/api/users/signup')
-    .send({ email, password })
+    .send({
+      email,
+      password,
+    })
     .expect(201);
 
-  const cookie = response.get('Set-Cookie');          
+  const cookie = response.get('Set-Cookie');
 
   return cookie;
 };
