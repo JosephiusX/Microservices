@@ -553,3 +553,7 @@ in client
 222. Adding a Sign Up Form
 
 By defining an auth folder with a signup.js file in side of it in the context of next.js that creates an auth/signup route.
+
+222. Adding a Sign Up Form
+
+223. Handling Email and Password Inputs
