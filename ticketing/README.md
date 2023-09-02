@@ -575,3 +575,5 @@ Now when I sign up with a test email and password I can see my object in the con
 228. An onSuccess Callback
 
 Now Im getting redirected to landing page when signup is entered correctly.
+
+229. Overview on Server Side Rendering
