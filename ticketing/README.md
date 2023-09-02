@@ -611,3 +611,7 @@ So the route from inside client to localhost:80 on my pc is:
         http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
 
 Or we could use a external name service to simplify though we wont as it would complicate the course objectives. 
+
+235. When is GetInitialProps Called?
+
+236. On the Server or the Browser
