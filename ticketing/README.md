@@ -580,4 +580,8 @@ Now Im getting redirected to landing page when signup is entered correctly.
 
 230. A note about ECONNREFUSED errors
 
+231. Fetching Data During SSR
 
+232. Why the Error?
+
+Explained diagram of how our project is working thus far. It also explains an error caused by the client seeking port 80 in the wrong context. 
