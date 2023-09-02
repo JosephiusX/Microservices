@@ -571,3 +571,7 @@ Now when I sign up with a test email and password I can see my object in the con
 225. Handling Validation Errors
 
 226. The useRequest Hook
+
+228. An onSuccess Callback
+
+Now Im getting redirected to landing page when signup is entered correctly.
