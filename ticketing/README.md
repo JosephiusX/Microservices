@@ -557,3 +557,13 @@ By defining an auth folder with a signup.js file in side of it in the context of
 222. Adding a Sign Up Form
 
 223. Handling Email and Password Inputs
+
+223. Handling Email and Password Inputs
+
+in client
+
+        npm i axios
+
+224. Successful Account Signup
+
+Now when I sign up with a test email and password I can see my object in the console. I can also find a cookie I created on the network tab under sign up. after clicking on signup I select the header tag and can scroll to find the cookie. 
