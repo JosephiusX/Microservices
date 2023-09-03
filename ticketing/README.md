@@ -638,5 +638,8 @@ Or we could use a external name service to simplify though we wont as it would c
 
 249. Building the Header
 
+250. Conditionally Showing Links
+
+
 
 
