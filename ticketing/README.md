@@ -658,6 +658,8 @@ AUTH IS SETUP
 
 259. An Easy Publish Command
 
+260. Relocating Shared Code
 
+        npm install express express-validator cookie-session jsonwebtoken @types/cookie-session @types/express @types/jsonwebtoken
 
 
