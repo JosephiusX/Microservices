@@ -665,7 +665,12 @@ AUTH IS SETUP
 
   * for some reason the pub command is failing to actually publish so Im doing it manually
 
-                npm publish
-
 261. Updating Import Statements
-0
+
+262. Updating the Common Module
+
+Fixed problem on 260 by updating the clean script:
+
+        "clean": "del-cli ./build/*"
+
+# Sec 13 Create-Read-Update-Destory Server Setup
