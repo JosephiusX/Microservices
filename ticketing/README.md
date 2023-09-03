@@ -642,7 +642,21 @@ Or we could use a external name service to simplify though we wont as it would c
 
 251. Signing Out
 
+AUTH IS SETUP
 
+252. React App Catchup & Checkpoint
+
+# Sec 12 : Code Sharing and reuse between Services
+
+253. Shared Logic Between Services
+
+255. NPM Organizations
+
+256. Publishing NPM Modules
+
+257. Project Setup
+
+259. An Easy Publish Command
 
 
 
