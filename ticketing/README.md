@@ -634,5 +634,9 @@ Or we could use a external name service to simplify though we wont as it would c
 
 247. Passing Props Through
 
+248. Error: Invalid <Link> with <a> child
+
+249. Building the Header
+
 
 
