@@ -663,3 +663,9 @@ AUTH IS SETUP
         npm install express express-validator cookie-session jsonwebtoken @types/cookie-session @types/express @types/jsonwebtoken
 
 
+  * for some reason the pub command is failing to actually publish so Im doing it manually
+
+                npm publish
+
+261. Updating Import Statements
+0
