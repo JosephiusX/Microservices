@@ -628,3 +628,7 @@ Or we could use a external name service to simplify though we wont as it would c
 
 244. Moving GetInitialProps
 
+245. Issues with Custom App GetInitialProps
+
+
+
