@@ -630,5 +630,7 @@ Or we could use a external name service to simplify though we wont as it would c
 
 245. Issues with Custom App GetInitialProps
 
+246. Handling Multiple GetInitialProps
+6
 
 
