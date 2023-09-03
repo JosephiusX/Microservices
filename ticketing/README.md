@@ -617,3 +617,5 @@ Or we could use a external name service to simplify though we wont as it would c
 236. On the Server or the Browser
 
 238. Specifying the Host
+
+240. A Reusable API Client
