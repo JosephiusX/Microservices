@@ -674,3 +674,33 @@ Fixed problem on 260 by updating the clean script:
         "clean": "del-cli ./build/*"
 
 # Sec 13 Create-Read-Update-Destory Server Setup
+
+263. Ticketing Service Overview
+
+Routes
+
+/api/tickets 
+
+        GET body:"" goal: Retrieve all tickets
+
+/api/tickets/:id GET  
+
+        body:"" goal: retreve ticket with specific ID
+
+/api/tickets
+
+        POST body: {title: string, price:string} goal: Create a ticket
+
+/api/tickets 
+
+        PUT { title: string, price: string } goal: Update a ticket
+
+PROJECT OVERVIEW:
+
+        npm init -y
+        Write dockerfile
+        Create index.ts to run project
+        Build image, push to docker hub
+        Write k8s file for deploymenmt, service
+        Update skaffold.yaml to do file sync for tickets
+        Write k8s file for Mongodb deployment, service
