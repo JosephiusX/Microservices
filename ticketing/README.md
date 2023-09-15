@@ -739,3 +739,7 @@ Building docker image. (inside tickets)
 push image
 
         docker push josephiusx/tickets
+
+265. Running the Ticket Service
+
+in our infra directory 

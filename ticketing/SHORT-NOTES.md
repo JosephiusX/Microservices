@@ -25,3 +25,19 @@ an tickets index.ts we need to
         install mongoose as a dependancie.
         we will also need a unique mongo database requiring an update to the mongodb srv
         in app.ts we have a lot of references to routes that don't actually exist. 
+
+265. Running the Ticket Service
+
+We create in infra/k8s 
+
+        tickets-depl.yaml
+
+Next we update the skaffold.yaml file for file syncing.
+
+Next we write out k8s file for Mongodb deployment, service. 
+
+        we can copy the auth-mongo-deploy
+
+in k8s
+
+        touch tickets-mongo-depl.yaml
