@@ -745,3 +745,7 @@ push image
 in our infra directory 
 
 266. Mongo Connection URI
+
+267. Quick Auth Update
+ 
+        Repeat process of previous lesson with auth instead. 
