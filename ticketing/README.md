@@ -753,3 +753,7 @@ in our infra directory
 268. Test-First Approach
 269. Creating the Router
 270. Adding Auth Protection
+
+        Landing page has appeared
+        client tickets and auth are logging 
+        tests are working
