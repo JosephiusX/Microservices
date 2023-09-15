@@ -718,7 +718,7 @@ inside tickets we copie files from auth to get a head start:
         package.json
         tsconfig.json
 
-still in ticketing 
+still in tickets
 
         mkdir src
 
