@@ -749,3 +749,7 @@ in our infra directory
 267. Quick Auth Update
  
         Repeat process of previous lesson with auth instead. 
+
+268. Test-First Approach
+269. Creating the Router
+270. Adding Auth Protection
