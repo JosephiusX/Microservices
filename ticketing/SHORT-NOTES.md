@@ -41,3 +41,11 @@ Next we write out k8s file for Mongodb deployment, service.
 in k8s
 
         touch tickets-mongo-depl.yaml
+
+command for creating a secret key in ticketing for now
+
+                kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+
+can run tickets test in ticket:
+
+        npm run test

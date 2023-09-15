@@ -1,38 +1,37 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tickets-depl
+  name: client-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tickets
+      app: client
   template:
     metadata:
       labels:
-        app: tickets
+        app: client
     spec:
       containers:
-        - name: tickets
-          image: josephiusx/tickets
-          env:
-            - name: MONGO_URI
-              value: 'mongodb://tickets-mongo-srv:27017/tickets'
-            - name: JWT_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: jwt-secret
-                  key: JWT_KEY
+      - name: client
+        image: josephiusx/client
+        resources:
+          limits:
+            cpu: "1"
+            memory: "1Gi"
+          requests:
+            cpu: "0.5"
+            memory: "512Mi"
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: tickets-srv
+  name: client-srv
 spec:
   selector:
-    app: tickets
+    app: client
   ports:
-    - name: tickets
-      protocol: TCP
+    - name: client
+      protocol:  TCP
       port: 3000
       targetPort: 3000
