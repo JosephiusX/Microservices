@@ -704,3 +704,38 @@ PROJECT OVERVIEW:
         Write k8s file for deploymenmt, service
         Update skaffold.yaml to do file sync for tickets
         Write k8s file for Mongodb deployment, service
+
+264. Project Setup
+
+in root dir
+
+        mkdir tickets
+inside tickets we copie files from auth to get a head start:
+
+        .dockerignore
+        Dockerfile
+        package-lock.json
+        package.json
+        tsconfig.json
+
+still in ticketing 
+
+        mkdir src
+
+from auth/src copy into ticketing/src:
+
+        /test
+        app.ts
+        index.ts
+
+change the name in tickets package.json from auth to tickets
+
+        npm install
+
+Building docker image. (inside tickets)
+
+        docker build -t josephiusx/tickets .
+
+push image
+
+        docker push josephiusx/tickets

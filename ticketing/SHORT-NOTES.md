@@ -19,3 +19,9 @@ get the service from a spicific namespace
 So the route from inside client to localhost:80 on my pc is:
 
         http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
+
+an tickets index.ts we need to 
+
+        install mongoose as a dependancie.
+        we will also need a unique mongo database requiring an update to the mongodb srv
+        in app.ts we have a lot of references to routes that don't actually exist. 
