@@ -757,3 +757,7 @@ in our infra directory
         Landing page has appeared
         client tickets and auth are logging 
         tests are working
+
+273. Building a Session
+
+        tests passing
