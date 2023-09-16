@@ -49,3 +49,7 @@ command for creating a secret key in ticketing for now
 can run tickets test in ticket:
 
         npm run test
+
+ticketing url for dev
+
+        https://ticketing.dev/
