@@ -769,3 +769,5 @@ in our infra directory
 
 276. Reminder on Mongoose with TypeScript
 
+277. Defining the Ticket Model
+
