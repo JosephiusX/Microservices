@@ -762,4 +762,10 @@ in our infra directory
 
         tests passing
 
+274. Testing Request Validation
+
+
 275. Validating Title and Price
+
+276. Reminder on Mongoose with TypeScript
+
