@@ -761,3 +761,5 @@ in our infra directory
 273. Building a Session
 
         tests passing
+
+275. Validating Title and Price
