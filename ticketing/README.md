@@ -778,4 +778,17 @@ in our infra directory
 one failed test expected by the end of this one. 
 
 280. Unexpected Failure!
-4061477
+
+281. What's that Error?!
+
+282. Better Error Logging
+
+We made a change to our common module. to update that change we need to rebuild and republish the common module
+
+        stop tests
+        navigate to common directory
+        npm run pub
+        navigate to tickets dir
+        npm update @jqgtickets/common
+
+now we are able to better understand errors that we dont yet have a custom error build for a given situation.
