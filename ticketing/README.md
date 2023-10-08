@@ -792,3 +792,6 @@ We made a change to our common module. to update that change we need to rebuild 
         npm update @jqgtickets/common
 
 now we are able to better understand errors that we dont yet have a custom error build for a given situation.
+
+282. Better Error Logging
+
