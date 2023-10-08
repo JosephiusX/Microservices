@@ -791,7 +791,8 @@ We made a change to our common module. to update that change we need to rebuild 
         navigate to tickets dir
         npm update @jqgtickets/common
 
-now we are able to better understand errors that we dont yet have a custom error build for a given situation.
+now we are able to better understand errors  that we dont yet have a custom error build for a given situation.
 
 282. Better Error Logging
 
+284. Ticket Updating
