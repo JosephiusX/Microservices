@@ -795,4 +795,9 @@ now we are able to better understand errors  that we dont yet have a custom erro
 
 282. Better Error Logging
 
+283. Complete Index Route Implementation
 284. Ticket Updating
+285. Handling Updates
+
+
+
