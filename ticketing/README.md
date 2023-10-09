@@ -799,5 +799,9 @@ now we are able to better understand errors  that we dont yet have a custom erro
 284. Ticket Updating
 285. Handling Updates
 
+286. Permission Checking
 
+        update.test.ts
+        setup.ts
+        update.ts
 

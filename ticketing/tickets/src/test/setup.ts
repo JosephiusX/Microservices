@@ -1,3 +1,5 @@
+// C:\Users\josep\OneDrive\Desktop\Microservices\ticketing\tickets\src\test\setup.ts
+
 import { MongoMemoryServer } from 'mongodb-memory-server';
 import mongoose from 'mongoose';
 import request from 'supertest';
@@ -37,7 +39,7 @@ afterAll(async () => {
 global.signin = () => {
   // Build a JWT payload. { id, email }
   const payload = {
-    id: 'slkjdfg',
+    id: new mongoose.Types.ObjectId().toHexString(),
     email: 'test@test.com'
   };
 
