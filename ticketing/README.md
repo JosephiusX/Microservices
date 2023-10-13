@@ -805,5 +805,59 @@ now we are able to better understand errors  that we dont yet have a custom erro
         setup.ts
         update.ts
 
+287. Final Update Changes
+
 288. Manual Testing
 
+Now that everything is complete, the course tests it out manually with postman. To do this we have to update our ingress-srv.yaml file
+
+MANUAL TESTING
+
+Sign In or up Test:
+
+        POST https://ticketing.dev/api/users/signin 
+        on Body select raw > JSON
+        input:
+                {"email": "test@test.com", "password": "password"}
+In another tab test:
+
+        GET https:ticketing.dev/api/users/currentuser
+
+Should result in a response body "currentUser" with an id , email and iat
+
+Create Ticket Manual Test:
+
+        POST https://ticketing.dev.api/tickets
+        in headers
+                Content-Type application/json
+        in Body params
+                raw > JSON
+                        title: concert
+                        price: 10
+Should result in a response with a title , price , userId , __v, and id
+
+I Can test It was saved using a GET request and the id from the step before like so.
+
+        GET https://ticketing.dev/api/tickets/<id from previous step>
+                for a given ticket
+or without an id to get all the tickets. 
+
+Update Manual Test:
+
+        PUT https://ticketing.dev/api/tickets/< id of ticket to be updated>
+        we can update the title and the price in the body with a json object.
+
+should recieve a confirmation response
+
+# Sec 14
+
+289. What Now?
+291. Three Important Items
+
+High level Notes (Overview)
+
+There is NATS and NATS STREAMING SERVER. In the context of this course NATS will refer to the streamimg server option. We will always be using NATS STREAMING SERVICE. Never strictly NATS.
+
+
+
+292. Creating a NATS Streaming Deployment
