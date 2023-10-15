@@ -861,3 +861,7 @@ There is NATS and NATS STREAMING SERVER. In the context of this course NATS will
 
 
 292. Creating a NATS Streaming Deployment
+
+We start by writing out a depl file in our k8s dir.
+
+We learn about configure custom command line options
