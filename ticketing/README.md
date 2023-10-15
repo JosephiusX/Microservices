@@ -899,3 +899,18 @@ Add scripts to run each
 
         tsc --init
         
+295. Port-Forwarding with Kubectl
+
+At this point we get an error when we run npm publish we get an error. this is expected. This part of the project is outside of Ingress-Nginx.
+
+2 options towards a solution are discussed
+
+in nats-test
+
+        kubectl get pods
+                copy name of nats depl for nest step
+        kubectl port-forward nats-depl-958fb4687
+
+leave that running and in another terminal window in nats-test
+
+        npm run publish
