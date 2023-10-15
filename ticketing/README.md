@@ -867,3 +867,35 @@ There is NATS and NATS STREAMING SERVER. In the context of this course NATS will
 start by writing out a depl file in our k8s dir.
 
 learning about configure custom command line options.
+
+293. Big Notes on NATS Streaming
+
+        https://www.npmjs.com/package/node-nats-streaming
+
+High level on how nats streaming server differes from our original event buss implementation. 
+
+294. Building a NATS Test Project
+
+SHORT TERM GOAL
+
+        Create new sub-project with typescript support.
+
+        Install node-nats-streaming library and connect to nats streaming server
+
+        One npm script to run code and emit events , and one to run code to listen for events
+
+        This program will be ran outside of kubernetes!
+
+In ticketing dir
+
+        mkdir nats-test
+        cd nats-test
+        npm init -y
+        npm install node-nats-streaming ts-node-dev typescript @types/node
+        mkdir src
+        touch src/publisher.ts
+        touch src/listener.ts
+Add scripts to run each
+
+        tsc --init
+        
