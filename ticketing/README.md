@@ -914,3 +914,6 @@ in nats-test
 leave that running and in another terminal window in nats-test
 
         npm run publish
+
+296. Publishing Events
+working
