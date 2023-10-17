@@ -945,3 +945,11 @@ update scripts in nats-test
 298. Listening For Data
 
 299. Accessing Event Data
+
+Nats Streaming server never wants to see duplicate Id's. thus for now we are going to randomly generate that string. 
+
+300. Client ID Generation
+
+301. Queue Groups
+
+Now when I reset my publisher the data only gets sent to one listener as intended.
