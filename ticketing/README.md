@@ -927,7 +927,7 @@ in nats-test
                 Port#1 : Port on the pod that im trying to access. 
 
         Course Example:
-                kubectl port-forward nats-depl-6fc5476865-lng8h 4222:4222
+                kubectl port-forward nats-depl-79476d5b95-sglgl  4222:4222
 This is however a very temporary solution. 
 
 
@@ -944,3 +944,4 @@ update scripts in nats-test
 
 298. Listening For Data
 
+299. Accessing Event Data
