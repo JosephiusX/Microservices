@@ -53,3 +53,18 @@ can run tickets test in ticket:
 ticketing url for dev
 
         https://ticketing.dev/
+
+Port forwarding temporaraly
+
+                kubectl get pods
+                        gets names of running pods
+
+        kubectl port-forward <nats depl pod name> 
+                <Port#1><Port#s2>     
+                        Port#1 : Port on my local machine
+                        Port#2 : Port on the pod that im trying to access. 
+
+        Course Example:
+                kubectl port-forward nats-depl-64b75754c9-lbhd2 4222:4222
+
+        run scripts for publisher and listener

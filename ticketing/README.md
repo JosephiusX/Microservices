@@ -937,3 +937,10 @@ leave that running and in another terminal window in nats-test
 
 296. Publishing Events
 working
+
+297. Small Required Command Change
+
+update scripts in nats-test
+
+298. Listening For Data
+
