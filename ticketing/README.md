@@ -968,3 +968,9 @@ REVIEW
 
 307. [Optional] More Possible Concurrency Solution…
 REVIEW
+
+308. Solving Concurrency Issues
+REVIEW
+
+309. Concurrency Control with the Tickets App
+REVIEW
