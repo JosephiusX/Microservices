@@ -959,3 +959,6 @@ Now when I reset my publisher the data only gets sent to one listener as intende
 By default when an event is send from a queue group but then is lost due to an error in the subscription, there is no way to see that that data is regenerated. We want to change these defaults by adding to the options object in the listener.
 
 303. Client Health Checks
+
+305. Core Concurrency Issues
+ " Most imporntant lesson in this course "
