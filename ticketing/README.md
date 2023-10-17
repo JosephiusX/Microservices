@@ -852,6 +852,18 @@ should recieve a confirmation response
 # Sec 14
 
 289. What Now?
+
+290. NATS ALTERNATIVES.
+
+        - RabbitMQ
+        - Kafka
+        - ...
+
+About why we are using nats for the context of this course, why.
+
+Also metions other more professionally viable 
+
+
 291. Three Important Items
 
 High level Notes (Overview)
@@ -908,8 +920,16 @@ At this point we get an error when we run npm publish we get an error. this is e
 in nats-test
 
         kubectl get pods
-                copy name of nats depl for nest step
-        kubectl port-forward nats-depl-958fb4687
+                gets names of running pods
+
+        kubectl port-forward <nats depl pod name> <Port#1><Port#s2>     
+                Port#1 : Port on my local machine
+                Port#1 : Port on the pod that im trying to access. 
+
+        Course Example:
+                kubectl port-forward nats-depl-6fc5476865-lng8h 4222:4222
+This is however a very temporary solution. 
+
 
 leave that running and in another terminal window in nats-test
 
