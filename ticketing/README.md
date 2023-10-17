@@ -962,3 +962,5 @@ By default when an event is send from a queue group but then is lost due to an e
 
 305. Core Concurrency Issues
  " Most imporntant lesson in this course "
+
+306. Common Questions
