@@ -68,3 +68,7 @@ Port forwarding temporaraly
                 kubectl port-forward nats-depl-64b75754c9-lbhd2 4222:4222
 
         run scripts for publisher and listener
+
+        nats-test
+
+kubectl port-forward nats-depl-79476d5b95-sglgl 8222:8222

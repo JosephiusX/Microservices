@@ -953,3 +953,9 @@ Nats Streaming server never wants to see duplicate Id's. thus for now we are goi
 301. Queue Groups
 
 Now when I reset my publisher the data only gets sent to one listener as intended.
+
+302. Manual Ack Mode
+
+By default when an event is send from a queue group but then is lost due to an error in the subscription, there is no way to see that that data is regenerated. We want to change these defaults by adding to the options object in the listener.
+
+303. Client Health Checks
