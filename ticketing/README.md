@@ -978,4 +978,7 @@ REVIEW
 310. Event Redelivery
 
 311. Durable Subscriptions
+Send all the data on the first spinup and only the latest data on subsiquend restarts. 
+
+312. Reusable NATS Listeners
 
