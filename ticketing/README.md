@@ -975,5 +975,7 @@ REVIEW
 309. Concurrency Control with the Tickets App
 REVIEW
 
+310. Event Redelivery
+
 311. Durable Subscriptions
 
