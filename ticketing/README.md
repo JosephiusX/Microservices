@@ -996,3 +996,6 @@ In nats-test:
 
 316. Leveraging TypeScript for Listener Validation
 
+in nats-test/events/src:
+
+        touch subjects.ts
