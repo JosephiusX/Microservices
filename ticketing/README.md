@@ -999,3 +999,12 @@ In nats-test:
 in nats-test/events/src:
 
         touch subjects.ts
+
+317. Subjects Enum
+
+318. Custom Event Interface
+
+in nats-test/events/src:
+
+        touch ticket-created-event.ts
+
