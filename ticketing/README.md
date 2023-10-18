@@ -1010,3 +1010,5 @@ in nats-test/events/src:
 318. Custom Event Interface
 
 319. Enforcing Listener Subjects
+
+320. Quick Note: 'readonly' in Typescript
