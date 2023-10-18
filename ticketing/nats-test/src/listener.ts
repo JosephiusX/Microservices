@@ -75,8 +75,7 @@ abstract class Listener {
       );
 
         const parsedData = this.parseMessage(msg);
-        this.onMessage(palrsedData, msg);
-
+        this.onMessage(parsedData, msg);
     });
   }
 
