@@ -19,6 +19,7 @@ stan.on('connect', () => {
     .subscriptionOptions()
     .setManualAckMode(true)
     .setDeliverAllAvailable();
+    .setDurableName();
   const subscription = stan.subscribe(
     'ticket:created',
     // 'order-service-queue-group',
