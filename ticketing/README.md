@@ -1012,3 +1012,6 @@ in nats-test/events/src:
 319. Enforcing Listener Subjects
 
 320. Quick Note: 'readonly' in Typescript
+
+321. Enforcing Data Types
+

@@ -65,7 +65,7 @@ Port forwarding temporaraly
                         Port#2 : Port on the pod that im trying to access. 
 
         Course Example:
-                kubectl port-forward nats-depl-64b75754c9-lbhd2 4222:4222
+                kubectl port-forward nats-depl-6c55b9b8b9-84gnl 4222:4222
 
         run scripts for publisher and listener
 
