@@ -1002,9 +1002,11 @@ in nats-test/events/src:
 
 317. Subjects Enum
 
-318. Custom Event Interface
-
+ 
 in nats-test/events/src:
 
         touch ticket-created-event.ts
 
+318. Custom Event Interface
+
+319. Enforcing Listener Subjects
