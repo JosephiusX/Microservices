@@ -983,5 +983,16 @@ Send all the data on the first spinup and only the latest data on subsiquend res
 SEC 15: Connecting to NATS in a Node JS World
 
 312. Reusable NATS Listeners
-
 313. The Listener Abstract Class
+314. Extending the Listener
+
+315. Quick Refactor
+
+In nats-test:
+
+        mkdir src/events
+        touch src/events/base-listener.ts
+        touch src/events/ticket-created-listener.ts
+
+316. Leveraging TypeScript for Listener Validation
+
