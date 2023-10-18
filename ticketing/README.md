@@ -980,5 +980,7 @@ REVIEW
 311. Durable Subscriptions
 Send all the data on the first spinup and only the latest data on subsiquend restarts. 
 
+SEC 15: Connecting to NATS in a Node JS World
+
 312. Reusable NATS Listeners
 
