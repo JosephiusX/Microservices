@@ -1024,3 +1024,4 @@ In nats-test/src/events:
         touch base-listener.ts
         touch ticket-created-publisher.ts
 
+324. Using the Custom Publisher
