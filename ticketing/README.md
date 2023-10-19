@@ -1019,3 +1019,8 @@ in nats-test/events/src:
 
 323. Custom Publisher
 
+In nats-test/src/events:
+
+        touch base-listener.ts
+        touch ticket-created-publisher.ts
+
