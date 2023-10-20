@@ -1025,3 +1025,14 @@ In nats-test/src/events:
         touch ticket-created-publisher.ts
 
 324. Using the Custom Publisher
+
+326. Common Event Definitions Summary
+
+Publishers:
+
+        Similar to a network request in that there is not alot to test
+
+Listeners:
+
+        Similar in nature to request handlers. Tons of stuff to test
+
