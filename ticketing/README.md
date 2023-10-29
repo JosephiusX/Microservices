@@ -1034,9 +1034,19 @@ Publishers:
 
 Listeners:
 
-
-
         Similar in nature to request handlers. Tons of stuff to test
 
 327. Updating the Common Module
 
+
+Sec 16 Managing a NATS Client
+
+329. Publishing Ticket Creation
+
+in tickets/src
+
+        mkdir events
+        cd events
+        mkdir publishers
+        cd publishers
+        touch ticket-created-publisher.ts
