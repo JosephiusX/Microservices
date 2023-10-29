@@ -1,10 +1,10 @@
 // C:\Users\josep\OneDrive\Desktop\Microservices\ticketing\tickets\src\routes\new.ts
-
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import { requireAuth, validateRequest } from '@jqgtickets/common';
 import { Ticket } from '../models/ticket';
 import { TicketCreatedPublisher } from '../events/publishers/ticket-created-publisher';
+import { natsWrapper } from '../nats-wrapper';  // Import added here
 
 const router = express.Router();
 
@@ -27,7 +27,7 @@ validateRequest,
       userId: req.currentUser!.id
     });
     await ticket.save();
-    await new TicketCreatedPublisher(client).publish({
+    await new TicketCreatedPublisher(natsWrapper.client).publish({  // Changed 'client' to 'natsWrapper.client'
       id: ticket.id,
       title: ticket.title,
       price: ticket.price,
