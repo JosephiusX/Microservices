@@ -1,3 +1,9 @@
+116. Ingress-Nginx Setup
+
+https://kubernetes.github.io/ingress-nginx/deploy/
+
+        checkout the quickstart installation 
+
 234. Cross Namespace Service Communication
 
 in the client kubernetties pod we are trying to access Ingress Nginx on localhost:80. The problem is that the client pod has a different context. localhost in client isin't the same as the Ingress Nginx localhost location.
@@ -72,3 +78,7 @@ Port forwarding temporaraly
         nats-test
 
 kubectl port-forward nats-depl-79476d5b95-sglgl 8222:8222
+
+CreateContainerConfigError
+
+        jwt-secret --from-literal=JWT_KEY=asdf
