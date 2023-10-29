@@ -1052,4 +1052,4 @@ in tickets/src
         touch ticket-created-publisher.ts
 
 330. More on Publishing
-9
+331. NATS Client Singleton
