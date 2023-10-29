@@ -1,3 +1,5 @@
+// C:\Users\josep\OneDrive\Desktop\Microservices\ticketing\tickets\src\routes\new.ts
+
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import { requireAuth, validateRequest } from '@jqgtickets/common';
