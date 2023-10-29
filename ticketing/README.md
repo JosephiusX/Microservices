@@ -1056,3 +1056,5 @@ in tickets/src
 332. Node Nats Streaming Installation
 333. Remember Mongoose?
 334. TS Error - Did you forget to include 'void' i…
+335. Singleton Implementation
+336. Accessing the NATS Client
