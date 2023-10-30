@@ -1,7 +1,8 @@
 // C:\Users\josep\OneDrive\Desktop\Microservices\ticketing\tickets\src\routes\new.ts
-import nats, { Stan } from 'node-nats-streaming';
 
-class NatsWrapper {
+import nats, { Stan } from 'node-nats-streaming'; // Importing nats
+
+class NatsWrapper { // Create Class
   private _client?: Stan;
 
   get client() {
@@ -29,4 +30,4 @@ class NatsWrapper {
   }
 }
 
-export const natsWrapper = new NatsWrapper();
+export const natsWrapper = new NatsWrapper(); // Exporting instance of class

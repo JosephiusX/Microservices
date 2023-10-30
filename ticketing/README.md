@@ -1081,3 +1081,5 @@ If saveing either fails, the db can rollback changes.
         -In that folder, create a file with an identical name to the file we want to fake
         -Write a fake implemenmtation
         -Tell jest to use that fake file in our test files. 
+
+344. Providing a Mock Implementation
