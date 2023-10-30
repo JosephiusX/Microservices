@@ -1064,4 +1064,11 @@ in tickets/src
 
                 Tests worlking.
 
-340. Failed Event Publishing
+340. Failed Event Publishing: Potential latency issues when publishing new events
+341. Handling Publish Failures: Solution though not used
+
+        The tickets Database contains Both a Transactions Collection with the userId and transactions
+
+        Also the db contains a Event Collection. 
+
+If saveing either fails, the db can rollback changes. 
