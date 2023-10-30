@@ -1083,3 +1083,5 @@ If saveing either fails, the db can rollback changes.
         -Tell jest to use that fake file in our test files. 
 
 344. Providing a Mock Implementation
+345. Test-Suite Wide Mocks
+
