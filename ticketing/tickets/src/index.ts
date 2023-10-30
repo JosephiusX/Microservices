@@ -14,8 +14,7 @@ const start = async () => {
     
     try {
         await natsWrapper.connect('ticketing', 'dgfhfdgh', 'http://nats-srv:4222');
-
-        natsWrapper.client.on('connect', () => {
+        natsWrapper.client.on('close', () => {
             console.log('NATS connection closed!');
             process.exit();
           });
