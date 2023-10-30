@@ -1074,3 +1074,10 @@ in tickets/src
 If saveing either fails, the db can rollback changes. 
 
 342. Fixing a Few Tests
+343. Redirecting Imports
+
+        -find file we want to 'fake'
+        -In the same directory, create a folder called '__mocks__'+
+        -In that folder, create a file with an identical name to the file we want to fake
+        -Write a fake implemenmtation
+        -Tell jest to use that fake file in our test files. 
