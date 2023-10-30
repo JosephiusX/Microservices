@@ -1060,5 +1060,8 @@ in tickets/src
 336. Accessing the NATS Client
 337. Graceful Shutdown
 338. Successful Listen!
+339. Ticket Update Publishing
 
                 Tests worlking.
+
+340. Failed Event Publishing
