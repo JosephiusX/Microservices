@@ -1087,11 +1087,11 @@ If saveing either fails, the db can rollback changes.
 346. Ensuring Mock Invocations
 347. NATS Env Variables
 349. Scaffolding the Orders Service
-
 350. A Touch More Setup
 351. Ingress Routing Rules
 352. Scaffolding a Few Route Handlers
 353. Subtle Service Coupling
 354. Associating Orders and Tickets
-b
+355. Order Model Setup
+
 
