@@ -126,7 +126,7 @@ in src
         cd middlewares
         touch error-handler.ts
 
-needed to reset skaffold before successful testing of this. 
+needed to reset skaffold before suc9cessful testing of this. 
 
 139. Communicating More Info to the Error Handler
 140. Encoding More Information In an Error
