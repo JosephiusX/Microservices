@@ -1093,5 +1093,6 @@ If saveing either fails, the db can rollback changes.
 353. Subtle Service Coupling
 354. Associating Orders and Tickets
 355. Order Model Setup
+356. The Need for an Enum
 
 
