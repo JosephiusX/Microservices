@@ -1096,5 +1096,6 @@ If saveing either fails, the db can rollback changes.
 356. The Need for an Enum
 357. Creating an Order Status Enum
 
+359. Defining the Ticket Model
 
 
