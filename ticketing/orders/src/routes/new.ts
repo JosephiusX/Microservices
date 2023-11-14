@@ -13,6 +13,8 @@ import {Order} from '../modules/order';
 
 const router = express.Router();
 
+const EXPIRATION_WINDOW_SECONDS = 15 * 60;
+
 router.get('/api/orders/', requireAuth, [
   body('ticketId')
     .not()
@@ -30,29 +32,26 @@ validateRequest,
   }
 
   // Make sure ticket is not reserved
-  // Out of all orders find the ticket we just found with a ticket status of not cancelled
-
-  const existingOrder = await Order.findOne({
-    ticket: ticket,
-    status: {
-      $in:[
-        OrderStatus.Created,
-        OrderStatus.AwaitingPayment,
-        OrderStatus.Complete
-      ],
-    },
-  });
-  if (existingOrder) {
+  const isReserved = await ticket.isReserved();
+  if (isReserved) {
     throw new BadRequestError('Ticket is already reserved');
   }
 
   // Calculate expiraton date for order
+  const expiration = new Date();
+  expiration.setSeconds(expiration.getSeconds() + EXPIRATION_WINDOW_SECONDS);
 
   // Build order , save to the database
+  const order = Order.build({
+    userId: req.currentUser!.id,
+    status: OrderStatus.Created,
+    expiresAt: expiration,
+    ticket
+  });
+  await order.save();
 
   //Publish an event saying that an order was created
-
-  res.send({});
+  res.status(201).send(order);
 });
 
 export {router as newOrderRouter};
