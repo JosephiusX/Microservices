@@ -1,6 +1,12 @@
 import mongoose from 'mongoose';
 import express, { Request, Response } from 'express';
-import {requireAuth, validateRequest, NotFoundError } from '@jqgtickets/common';
+import { 
+  requireAuth, 
+  validateRequest, 
+  NotFoundError, 
+  OrderStatus, 
+  BadRequestError 
+} from '@jqgtickets/common';
 import {body} from 'express-validator'
 import {Ticket} from '../models/ticket';
 import {Order} from '../modules/order';
@@ -24,6 +30,21 @@ validateRequest,
   }
 
   // Make sure ticket is not reserved
+  // Out of all orders find the ticket we just found with a ticket status of not cancelled
+
+  const existingOrder = await Order.findOne({
+    ticket: ticket,
+    status: {
+      $in:[
+        OrderStatus.Created,
+        OrderStatus.AwaitingPayment,
+        OrderStatus.Complete
+      ],
+    },
+  });
+  if (existingOrder) {
+    throw new BadRequestError('Ticket is already reserved');
+  }
 
   // Calculate expiraton date for order
 

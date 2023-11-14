@@ -1098,4 +1098,7 @@ If saveing either fails, the db can rollback changes.
 
 359. Defining the Ticket Model
 
+361. Finding Reserved Tickets
+361. Finding Reserved Tickets
+
 
